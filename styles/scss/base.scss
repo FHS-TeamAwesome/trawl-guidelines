@@ -1,0 +1,63 @@
+body {
+    width: 50%;
+    background-color: #FFF;
+}
+
+h1 {
+    margin-top: 60px;
+}
+
+h1:first-child {
+    margin-top: 0;
+}
+
+.styleguide_item {
+    overflow: hidden;
+}
+
+.color_unit {
+    float: left;
+    padding-left: 10px;
+    width: 33.33333%;
+    box-sizing: border-box;
+}
+
+.color_unit:last-child:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.color_show {
+    padding: 12px;
+}
+
+.color_show-blue {
+    background-color: $blue;
+}
+
+.color_show-lightblue {
+    background-color: $lightblue;
+}
+
+.color_show-brown {
+    background-color: $brown;
+}
+
+.color_show-black {
+    background-color: $black;
+}
+
+.color_show-darkblue {
+    background-color: $darkblue;
+}
+
+.color_show-gray {
+    background-color: $gray;
+}
+
+.color_show-bordercolor {
+    background-color: white;
+    border: 1px solid $bordercolor;
+}
+
