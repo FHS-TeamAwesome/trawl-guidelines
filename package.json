@@ -1,10 +1,7 @@
 {
   "name": "trawl-guidelines",
   "version": "1.0.0",
-  "description": "Guidelines for the Trawl webapp",
-  "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {},
+  "description": "Styleguides for the Trawl-Webapp",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,10 +9,17 @@
     "type": "git",
     "url": "git+https://github.com/FHS-TeamAwesome/trawl-guidelines.git"
   },
-  "author": "TeamAwesome",
+  "author": "RailingResi, Daxi95, 3rfan",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/FHS-TeamAwesome/trawl-guidelines/issues"
   },
-  "homepage": "https://github.com/FHS-TeamAwesome/trawl-guidelines#readme"
+  "homepage": "https://github.com/FHS-TeamAwesome/trawl-guidelines#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^1.2.1",
+    "load-grunt-tasks": "^3.5.2",
+    "bootstrap-grid": "git+https://github.com/scriptheroes/bootstrap-grid.git#v1.0.1"
+  }
 }
