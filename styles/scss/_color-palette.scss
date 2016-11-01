@@ -1,1 +1,41 @@
+.color-palette {
+    overflow: hidden;
+}
 
+.color-palette-unit {
+    float: left;
+    padding-left: 10px;
+    width: 33.33333%;
+    box-sizing: border-box;
+
+    &:last-child:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+}
+
+.color-palette-show {
+    padding: 12px;
+
+    &.is-primary {
+        background-color: $primaryColor;
+    }
+
+    &.is-highlight {
+        background-color: $highlightColor;
+    }
+
+    &.is-accent {
+        background-color: $accentColor;
+    }
+
+    &.is-dark {
+        background-color: $darkColor;
+    }
+
+    &.is-light {
+        border: 1px solid #DDD;
+        background-color: $lightColor;
+    }
+}
