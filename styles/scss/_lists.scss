@@ -1,0 +1,32 @@
+.element-lists li{
+	margin-left: 0;
+    padding-right: 0;
+    list-style-type: none;
+    }
+
+.list-ordred li{
+	counter-increment: step-counter;
+}
+
+.list-ordred li::before{
+	content: counter(step-counter);
+    margin-right: 5px;
+    font-size: 80%;
+    background-color: rgb(200,200,200);
+    color: white;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 3px;
+}
+
+
+.list-unordred li::before{
+	content: '';
+   display: inline-block;
+   width: 15px;
+   height: 15px;
+   -moz-border-radius: 15px;
+   -webkit-border-radius: 15px;
+   border-radius: 15px;
+   background-color: rgb(200,200,200);
+}
