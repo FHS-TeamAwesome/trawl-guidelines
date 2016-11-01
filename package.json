@@ -2,7 +2,6 @@
   "name": "trawl-guidelines",
   "version": "1.0.0",
   "description": "Styleguides for the Trawl-Webapp",
-  "main": "\"\"",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,6 +19,7 @@
     "grunt": "^1.0.1",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-sass": "^1.2.1",
-    "load-grunt-tasks": "^3.5.2"
+    "load-grunt-tasks": "^3.5.2",
+    "bootstrap-grid": "git+https://github.com/scriptheroes/bootstrap-grid.git#v1.0.1"
   }
 }
