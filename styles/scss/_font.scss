@@ -3,4 +3,45 @@
 body {
     font-family: "Source Sans Pro", sans-serif;
     font-size: 16px;
+    font-weight: 300;
+}
+
+.reset-font {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.text-bold {
+    font-weight: 700;
+}
+
+.text-semi-bold {
+    font-weight: 600;
+}
+
+.text-regular {
+    font-weight: 400;
+}
+
+.text-light {
+    font-weight: 300;
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+.text-error {
+    color: $error-text;
+    font-weight: 700;
+}
+
+.text-warning {
+    color: $warning-text;
+    font-weight: 700;
+}
+
+.text-success {
+    color: $success-text;
+    font-weight: 700;
 }
