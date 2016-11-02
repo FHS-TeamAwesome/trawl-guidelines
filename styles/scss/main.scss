@@ -1,26 +1,17 @@
-@import '_fonts.scss';
-@import '_headings.scss';
-@import '_btn.scss';
-@import '_lists.scss';
+<<<<<<< HEAD
 
-$font: 'Lucida Sans Unicode' sans-serif;
-
-body{
-	color:#111;
-	background-color: #EEE;
-	font-family: $font;
-}
-
-.elements{
-	height: 95%;
-	widht: 95%;
-	padding:15px;
-	background-color: #FFF;
-
-	-webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-  	-moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
-  	box-shadow:         3px 3px 5px 6px #ccc;
-
-  	display: flex;
-}
-
+=======
+@import "../../node_modules/bootstrap-grid/main.scss";
+@import "variables";
+@import "normalize";
+@import "base";
+@import "utility";
+@import "font";
+@import "heading";
+@import "list";
+@import "color-palette";
+@import "image-container";
+@import "navigation";
+@import "header";
+@import "page";
+>>>>>>> 09ec591a60b920f7617969afffb28a8f4ee98603

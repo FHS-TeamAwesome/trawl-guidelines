@@ -1,0 +1,14 @@
+.image-container {
+    width: 200px;
+    text-align: center;
+    float: left;
+    margin-right: 70px;
+
+    &:last-child {
+        margin: 0;
+    }
+}
+
+.image-container-description {
+    margin-top: 10px;
+}

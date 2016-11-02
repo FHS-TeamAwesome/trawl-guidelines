@@ -1,0 +1,14 @@
+.list-unstyled {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list-inline {
+    @extend .list-unstyled;
+
+    & > li {
+        display: inline-block;
+        vertical-align: top;
+    }
+}
