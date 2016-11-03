@@ -6,42 +6,42 @@ body {
     font-weight: 300;
 }
 
-.reset-font {
+.font-reset {
     font-size: 1rem;
     font-weight: 300;
 }
 
-.text-bold {
+.font-bold {
     font-weight: 700;
 }
 
-.text-semi-bold {
+.font-semi-bold {
     font-weight: 600;
 }
 
-.text-regular {
+.font-regular {
     font-weight: 400;
 }
 
-.text-light {
+.font-light {
     font-weight: 300;
 }
 
-.text-italic {
+.font-italic {
     font-style: italic;
 }
 
-.text-error {
+.font-error {
     color: $error-text;
     font-weight: 700;
 }
 
-.text-warning {
+.font-warning {
     color: $warning-text;
     font-weight: 700;
 }
 
-.text-success {
+.font-success {
     color: $success-text;
     font-weight: 700;
 }
