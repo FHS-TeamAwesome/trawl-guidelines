@@ -1,7 +1,5 @@
-<<<<<<< HEAD
-
-=======
 @import "../../node_modules/bootstrap-grid/main.scss";
+@import "link";
 @import "variables";
 @import "normalize";
 @import "base";
@@ -14,4 +12,5 @@
 @import "navigation";
 @import "header";
 @import "page";
->>>>>>> 09ec591a60b920f7617969afffb28a8f4ee98603
+@import "btn";
+@import "form";

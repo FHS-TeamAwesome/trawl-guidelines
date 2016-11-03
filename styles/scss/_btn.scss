@@ -1,4 +1,27 @@
-button{
-	height: 15px;
-	width: 22px;
+.btn {
+    box-shadow: 2px 2px 1px 1px #1C1D21;
+    background-color: #445878;
+    color: #EEEFF7;
+    border: none;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.btn:hover {
+    background-color: #92C9CF;
+}
+
+.btn-big {
+
+    padding: 10px 50px 10px 50px;
+}
+
+.btn-middle {
+    padding: 7px 30px 7px 30px;
+    font-size: 14px;
+}
+
+.btn-small {
+    padding: 4px 20px 4px 20px;
+    font-size: 12px;
 }
