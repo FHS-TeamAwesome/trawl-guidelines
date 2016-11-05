@@ -90,7 +90,7 @@
                 <section class="page-section">
                     <h3>Indentations (1 Tab = 4 Spaces)</h3>
                     <p class="page-section-description">
-                        Indenations are also really important to improve readability in your code.
+                        Indentations are also really important to improve readability in your code.
                         Every 'property-value' pair should have an indentation of 4 spaces. If you use
                         a code-editor like Sublime Text you can change the tab configuration so it uses
                         spaces instead.
@@ -117,12 +117,160 @@
             <section class="page-section">
                     <h3>Units (rem / px / %)</h3>
                     <p class="page-section-description">
-                        'rem' is used to define font-sizes. Every other size definition like 'width' or padding 
+                        'rem' is used to define font-sizes. Every other size definition like 'width' or 'padding' 
                         should use 'px' or precent as unit.
                         <br/><br/>
                         The font-size of the root node is set to '16px'. That means that '1rem = 16px'.
                     </p>
                 </section>
+            </section>
+
+            <section class="page-section">
+                    <h3>Class naming conventions</h3>
+                    <p class="page-section-description">
+                        The Trawl styleguide differentiates between three types of classes:
+                        <ul>
+                            <li>Component classes</li>
+                            <li>State classes</li>
+                            <li>Helper classes</li>
+                        </ul>
+                        Having these classes will help you to achieve a clean and organized structure inside your application. 
+                    </p>
+            </section>
+
+            <section class="page-section">
+                <h3>Component classes</h3>
+                <p class="page-section-description">
+                    Component classes are used to define the custom style of your component.
+                    You use them like in the following example:
+                </p>
+                <pre>
+<!-- ============== Code block ============== -->                   
+<code class="css">.navigation {
+    width: 100%;
+    height: 60px;
+    background-color: #444;
+    color: #fff;
+}
+</code>
+<!-- ============== /Code block ============== -->
+                </pre>
+                <p class="page-section-description">
+                    Here we define the styling for our navigation component.
+                    This class only defines the styling for the component wrapper as you can see in the 
+                    HTML snippet below.
+                </p>
+                <pre>  
+<!-- ============== Code block ============== -->                
+<code class="html">&lt;nav class="navigation"&gt;
+    &lt;div class="navigation-logo"&gt;&lt;/div&gt;
+    &lt;ul class="navigation-list list-inline"&gt;
+        &lt;li&gt;
+            &lt;a href="/"&gt;Home&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;
+</code>
+<!-- ============== /Code block ============== -->
+                </pre>
+
+                <p class="page-section-description">
+                    To define the styling for all the elements (let's call them sub-components) inside our navigation component we prefix the needed classes with our component name. <br/>
+                    In this case it is 'navigation'. So to define the styling for a logo inside our navigation we create a 'navigation-logo' class.<br/><br/>
+                    You can also mix up different component classes like in the example above where the base
+                    'list-inline' class has been used but in combination with the 'navigation-list' sub-component class
+                </p>
+            </section>
+
+            <section class="page-section">
+                <h3>State classes</h3>
+                <p class="page-section-description">
+                    Sometimes your component need to change it's appereance. For example you want to display a navigation item as active or an input as invalid. To do so you can use state classes.
+                </p>
+
+                <pre>  
+<!-- ============== Code block ============== -->                
+<code class="html">...
+    &lt;li class="is-active"&gt;
+        &lt;a href="/"&gt;Home&lt;/a&gt;
+    &lt;/li&gt;
+...
+</code>
+<!-- ============== /Code block ============== -->
+                </pre>
+                <pre>  
+<!-- ============== Code block ============== -->                
+<code class="css">.navigation-list > li.is-active {
+    border-bottom: 2px solid blue;
+}
+</code>
+<!-- ============== /Code block ============== -->
+                </pre>
+                <p class="page-section-description">
+                    Pay attention to the naming of the class. State classes are usually prefixed with an 'is-' or a 'has-'. State classes are component or subcomponent specific. Defining global state classes is considered an antipattern which you should avoid.
+                </p>
+            </section>
+
+            <section class="page-section">
+                <h3>Helper classes (Utility classes)</h3>
+                <p class="page-section-description">
+                    The last type of classes that we need are helper classes or also called utility classes.
+                    These styles can be used globaly inside your application and define styling for e.g. hiding 
+                    or floating elements. Utility classes can (but didn't have to) use '!important' to overwrite other style-definitions.<br/>
+                    Example:
+                </p>
+                <pre>  
+<!-- ============== Code block ============== -->                
+<code class="html">&lt;nav class="navigation clearfix"&gt;
+    &lt;div class="navigation-logo pull-left"&gt;...&lt;/div&gt;
+    &lt;ul class="list-inline navigation-list pull-right"&gt;
+        ...
+    &lt;/ul&gt;
+&lt;/nav&gt;
+</code>
+<!-- ============== /Code block ============== -->
+                </pre>
+                <pre>  
+<!-- ============== Code block ============== -->                
+<code class="css">.pull-left {
+    float: left;
+}
+
+.clearfix::after { ... }
+</code>
+<!-- ============== /Code block ============== -->
+                </pre>
+                <p class="page-section-description">
+                    Here we create and use two utility classes. First the 'clearfix' helper to remove the floating inside our navigation component and second the 'pull-left' helper to float the logo to the left side.
+                </p>
+            </section>
+
+            <section class="page-section">
+                <h3>Preprocessors</h3>
+                <p class="page-section-description">
+                    All the mentioned guidelines above can be used with vanilla CSS but the Trawl styleguide also works extremely well with Preprocessors like <a href="http://sass-lang.com/">SCSS</a> (recommended) or <a href="http://lesscss.org/">LESS</a>.
+                </p>
+            </section>
+
+            <section class="page-section">
+                <h3>File structure</h3>
+                <p class="page-section-description">
+                    Using SCSS we structure the styling of our application like this:
+                </p>
+                <pre>
+
+app/
+├── css/
+│   ├── main.css
+│   ├── main.min.css
+└── scss/
+    ├── _list.scss
+    ├── _utility.scss
+    ├── _font.scss
+    ├── _navigation.scss
+    ├── _component.scss
+    └── main.scss // has all the other components included
+                </pre>
             </section>
         </div>
 
