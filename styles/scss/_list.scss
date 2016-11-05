@@ -20,7 +20,7 @@
 }
 
 .list-striped {
-    & > li:nth-child(odd){
+    & > li:nth-child(odd) {
         background-color: #e5e5e5;
     }
 }
@@ -28,11 +28,4 @@
 .list-centered {
     display: block;
     text-align: center;
-}
-
-.list-sidebar {
-    width: 200px;
-    display: flex;
-    flex-direction: column;
-    background-color: $darkColor;
 }
