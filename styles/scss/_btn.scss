@@ -1,6 +1,4 @@
 .btn {
-    box-shadow: 2px 2px 1px 1px #1C1D21;
-    background-color: #445878;
     color: #EEEFF7;
     border: none;
     margin-bottom: 20px;
@@ -8,7 +6,7 @@
 }
 
 .btn:hover {
-    background-color: #92C9CF;
+    background-color: $highlightColor;
 }
 
 .btn-big {
@@ -24,4 +22,13 @@
 .btn-small {
     padding: 4px 20px 4px 20px;
     font-size: 12px;
+}
+
+.btn-color-blue{
+    background-color: $primaryColor;
+
+}
+
+.btn-color-light{
+    background-color: $accentColor;
 }
