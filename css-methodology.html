@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Methodology | Trawl Styleguide</title>
+
+        <link href="./css/main.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/monokai-sublime.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <nav class="navigation clearfix">
+            <div class="navigation-logo pull-left">
+                <img alt="logo" src="./images/logo_white.svg"/>
+                <div class="navigation-logo-subtext">
+                    Styleguide
+                </div>
+            </div>
+            <ul class="list-inline navigation-list pull-right">
+                <li>
+                    <a href="/brand">Brand Guide</a>
+                </li>
+                <li class="is-active">
+                    <a href="/css-methodology">CSS Methodology</a>
+                </li>
+                <li>
+                    <a href="/components">Components</a>
+                </li>
+            </ul>
+        </nav>
+
+        <header class="header">
+            <p class="header-description">
+                Modern, easy to use styleguide definition.
+            </p>
+        </header>
+
+        <div class="container">
+            <section class="page-section">
+                <h2>CSS Methodology</h2>
+                <p class="page-section-description">
+                    The Trawl styleguide encourages easy to understand coding conventions
+                    for structuring large scale CSS code bases.
+                </p>
+
+                <section class="page-section">
+                    <h3>Coding Conventions</h3>
+                    <p class="page-section-description">
+                        Before we start let's define the terminology used in this guide.
+                    </p>
+
+                    <pre>
+<!-- ============== Code block ============== -->                   
+<code class="css">.selector { 
+    property: value;
+}
+</code>
+<!-- ============== /Code block ============== -->
+                    </pre>
+
+                    <p class="page-section-description">
+                        This code snippet is called a style definition.
+                    </p>
+                </section>
+
+                <section class="page-section">
+                    <h3>Spacing</h3>
+                    <p class="page-section-description">
+                        Here are a set of guidelines on how to use spaces and
+                        line-breaks to promote readable and clean code.
+                    </p>
+
+                    <pre>
+<!-- ============== Code block ============== -->                   
+<code class="css">.my-class { 
+    background: blue;
+}
+
+.my-other-class { 
+    background: red;
+}
+</code>
+<!-- ============== /Code block ============== -->
+                    </pre>
+
+                    <p class="page-section-description">
+                        An empty line between every style definition and a space between 'property' and 'value' helps to improve the readability.
+                    </p>
+                </section>
+
+                <section class="page-section">
+                    <h3>Indentations (1 Tab = 4 Spaces)</h3>
+                    <p class="page-section-description">
+                        Indenations are also really important to improve readability in your code.
+                        Every 'property-value' pair should have an indentation of 4 spaces. If you use
+                        a code-editor like Sublime Text you can change the tab configuration so it uses
+                        spaces instead.
+
+                        Seperation of 'property' and 'value' is emphasised by adding a space after the colon.
+                        The same goes for the 'selector' and the style definition body.
+
+                        <div>Example Code:</div>
+                    </p>
+
+                    <pre>
+<!-- ============== Code block ============== -->                   
+<code class="css">.my-class { 
+    padding: 10px 5px 10px 5px;
+    background: blue;
+    color: red;
+}
+</code>
+<!-- ============== /Code block ============== -->
+                    </pre>
+                </section>
+            </section>
+
+            <section class="page-section">
+                    <h3>Units (rem / px / %)</h3>
+                    <p class="page-section-description">
+                        'rem' is used to define font-sizes. Every other size definition like 'width' or padding 
+                        should use 'px' or precent as unit.
+                        <br/><br/>
+                        The font-size of the root node is set to '16px'. That means that '1rem = 16px'.
+                    </p>
+                </section>
+            </section>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+    </body>
+
+</html>

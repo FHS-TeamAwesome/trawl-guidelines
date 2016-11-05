@@ -1,144 +1,184 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Trawl Styleguide</title>
-		<meta charset="utf-8">
-		<!-- Load c3.css -->
-		<link href="/c3-04.11/c3.css" rel="stylesheet" type="text/css">
-		<link href="main.scss" rel="stylesheet" type="text/css">
+    <head>
+        <title>Brand | Trawl Styleguide</title>
 
-		<!-- Load d3.js and c3.js -->
-		<script src="/c3-04.11/d3.v3.min.js" charset="utf-8">
-		</script>
-		<script src="/c3-04.11/c3.min.js">
-		</script>
-		<script src="chart.js">
-		</script>
-		
-	</head>
-	<body>
-		<div class="about">
-			<h1>
-			Trawl Styleguide
-			</h1>
-			<p>
-			This Styleguide includes the fundamental Component Library fort the Project "Trawl", executed by Teamawesome.
-			</p>
-		</div>
-		<!--Component Library:
-		Headings, Lists, Links, Buttons, form elements, media blocks, navigation
-		more components are optional
-		Each section should consist of an example, a code snippet, and an explanation of the use case for each element or component.-->
-		<div class="elements">
+        <link href="./css/main.css" rel="stylesheet">
+    </head>
 
-			<div class="element-headings">
+    <body>
+        <nav class="navigation clearfix">
+            <div class="navigation-logo pull-left">
+                <img alt="logo" src="./images/logo_white.svg"/>
+                <div class="navigation-logo-subtext">
+                    Styleguide
+                </div>
+            </div>
+            <ul class="list-inline navigation-list pull-right">
+                <li class="is-active">
+                    <a href="/brand">Brand Guide</a>
+                </li>
+                <li>
+                    <a href="/css-methodology">CSS Methodology</a>
+                </li>
+                <li>
+                    <a href="/components">Components</a>
+                </li>
+            </ul>
+        </nav>
 
-				<h1>Trawl</h1>
-				<h2>Trawl</h2>
-				<h3>Trawl</h3>
-				<h4>Trawl</h4>
-				<h5>Trawl</h5>
-				<h6>Trawl</h6>
+        <header class="header">
+            <p class="header-description">
+                Modern, easy to use styleguide definition.
+            </p>
+        </header>
 
-			</div>
+        <div class="container">
+            <section class="page-section">
+                <h2>Brand</h2>
+                <p class="page-section-description">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+                <div class="page-section">
+                    <h3>Logo</h3>
+                    <div class="image-container-wrapper clearfix">
+                        <div class="image-container">
+                            <img src="images/logo.svg">
+                            <div class="image-container-description">
+                                Get the <a href="images/logo.svg">SVG</a>
+                            </div>
+                        </div>
+                        <div class="image-container">
+                            <img src="images/logo_gray.svg">
+                            <div class="image-container-description">
+                                Get the <a href="images/logo_gray.svg">SVG</a>
+                            </div>
+                        </div>
+                        <div class="image-container">
+                            <img src="images/logo_white.svg">
+                            <div class="image-container-description">
+                                Get the <a href="images/logo_white.svg">SVG</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-section">
+                    <h3>Colors</h3>
+                    <div class="color-palette">
+                        <div class="color-palette-unit">
+                            <p class="color-palette-show is-primary"></p>
+                            <p>
+                                <p>$primaryColor</p>
+                                <p><b>#445878</b></p>
+                            </p>
+                        </div>
+                        <div class="color-palette-unit">
+                            <p class="color-palette-show is-highlight"></p>
+                            <p>
+                                <p>$highlightColor</p>
+                                <p><b>#92C9CF</b></p>
+                            </p>
+                        </div>
+                        <div class="color-palette-unit">
+                            <p class="color-palette-show is-accent"></p>
+                            <p>
+                                <p>$accentColor</p>
+                                <p><b>#31353D</b></p>
+                            </p>
+                        </div>
+                        <div class="color-palette-unit">
+                            <p class="color-palette-show is-dark"></p>
+                            <p>
+                                <p>$darkColor</p>
+                                <p><b>#1C1D21</b></p>
+                            </p>
+                        </div>
+                        <div class="color-palette-unit">
+                            <p class="color-palette-show is-light"></p>
+                            <p>
+                                <p>$lightColor</p>
+                                <p><b>#EEEFF7</b></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-section">
+                    <h3>Fonts</h3>
+                    <p>Source Sans Pro</p>
+                    <p>
+                        <div class="page-sub-section">
+                            <div class="font-bold">Bold <span class="font-reset pull-right">(font-weight: 700)</span></div>
+                        </div>
+                        <div class="page-sub-section">
+                            <div class="font-bold font-italic">Bold Italic</div>
+                        </div>
+                        <div class="page-sub-section">
+                            <div class="font-semi-bold">Semi Bold <span class="font-reset pull-right">(font-weight: 600)</span></div>
+                        </div>
+                        <div class="page-sub-section">
+                            <div class="font-semi-bold font-italic">Semi Bold Italic</div>
+                        </div>
+                        <div class="page-sub-section">
+                            <div class="font-regular">Regular <span class="font-reset pull-right">(font-weight: 400)</span></div>
+                        </div>
+                        <div class="page-sub-section">
+                            <div class="font-regular font-italic">Regular Italic</div>
+                        </div>
+                        <div class="page-sub-section">
+                            <div class="font-light">Light <span class="font-reset pull-right">(font-weight: 300)</span></div>
+                        </div>
+                        <div class="page-sub-section no-border">
+                            <div class="font-light font-italic">Light Italic</div>
+                        </div>
+                    </p>
+                </div>
+                <div class="page-section">
+                    <h3>Typhography</h3>
+                    <div class="page-sub-section">
+                        <h1 class="no-margin">Header Level 1 <span class="reset-font pull-right">(32px)</span></h1>
+                    </div>
+                    <div class="page-sub-section"> 
+                        <h2 class="no-margin">Header Level 2 <span class="reset-font pull-right">(28-29px)</span></h2>
+                    </div>
+                    <div class="page-sub-section"> 
+                        <h3 class="no-margin">Header Level 3 <span class="reset-font pull-right">(25-26px)</span></h3>
+                    </div>
+                    <div class="page-sub-section"> 
+                        <h4 class="no-margin">Header Level 4 <span class="reset-font pull-right">(22-23px)</span></h4>
+                    </div>
+                    <div class="page-sub-section"> 
+                        <h5 class="no-margin">Header Level 5 <span class="reset-font pull-right">(19-20px)</span></h5>
+                    </div>
+                    <div class="page-sub-section"> 
+                        <h6 class="no-margin">Header Level 6 <span class="reset-font pull-right">(16px)</span></h6>
+                    </div>
+                    <div class="page-sub-section"> 
+                        <p class="no-margin">
+                            This is a paragraph. Morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                            <span class="reset-font pull-right">(16px)</span>
+                        </p>
+                    </div>
+                    <div class="page-sub-section"> 
+                        <a class="no-margin" href="#">This is a link</a>
+                        <span class="reset-font pull-right">(16px)</span>
+                    </div>
+                    <div class="page-sub-section"> 
+                        <span class="font-error">$error-text</span>
+                        <span class="font-reset pull-right">#d32323</span>
+                    </div>
+                    <div class="page-sub-section"> 
+                        <span class="font-warning">$warning-text</span>
+                        <span class="font-reset pull-right">#f15c00</span>
+                    </div>
+                    <div class="page-sub-section no-border"> 
+                        <span class="font-success">$success-text</span>
+                        <span class="font-reset pull-right">#41a700</span>
+                    </div>
+                </div>
+                </ul>
+            </section>
+        </div>
+    </body>
 
-			<div class="element-lists">
-
-				<ol class="list-ordred">
-					<li>
-					item1
-					</li>
-
-					<li>
-					item2
-					</li>
-
-					<li>
-					item3
-					</li>
-
-					<li>
-					item4
-					</li>
-				</ol>
-
-				<ul class="list-unordred">
-					<li>
-					item
-					</li>
-
-					<li>
-					item
-					</li>
-
-					<li>
-					item
-					</li>
-
-					<li>
-					item
-					</li>
-				</ul>
-
-			</div>
-
-			<div class="element-links">
-
-				<a class="link" href="www.google.at" >Link</a>
-
-			</div>
-
-			<div class="element-buttons">
-
-				<button class="button-big">
-					Big
-				</button>
-				<button class="button-middle">
-					Middle
-				</button>
-				<button class="button-small">
-					Small
-				</button>
-
-			</div>
-
-			<div class = "element-forms">
-
-				<form class="formular">
-					<fieldset class="form-gruppe">
-						<legend>Personal Information</legend>
-
-						First Name:
-						<input type="text" name="first-name" value="first-name"/>
-
-						Second Name:
-						<input type="text" name="second-name" value="second-name"/>
-
-						<input type="submit" name="confirm">
-
-					</fieldset>
-				</form>
-
-			</div>
-
-			<div class="element-media-blocks">
-
-				<div id="chart" class="graph">
-
-				</div>
-
-			</div>
-
-			<div class="element-navigation">
-
-				<div class="nav-box"></div>
-				<div class="nav-box"></div>
-				<div class="nav-box"></div>
-
-			</div>
-
-		</div>
-
-
-	</body>
 </html>
+>>>>>>> eb9d76f250387426c7cef620efc00514380eeb57
