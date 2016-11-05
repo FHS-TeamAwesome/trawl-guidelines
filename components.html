@@ -2,10 +2,8 @@
 <html>
     <head>
         <title>Components | Trawl Styleguide</title>
-
         <link href="./css/main.css" rel="stylesheet">
     </head>
-
     <body>
         <nav class="navigation clearfix">
             <div class="navigation-logo pull-left">
@@ -26,19 +24,191 @@
                 </li>
             </ul>
         </nav>
-
         <header class="header">
             <p class="header-description">
                 Modern, easy to use styleguide definition.
             </p>
         </header>
-
         <div class="container">
             <section class="page-section">
-                <h2>Brand</h2>
+                <h2 id="components">Components</h2>
                 <p class="page-section-description">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    Here are all components listed.
                 </p>
+                <section class="page-section">
+                    <h2 id="brand">Ordred Lists</h2>
+                    <p class="page-section-description">
+                        Ordred lists can be used to structure several elements from the same group hirachically:
+                    </p>
+                    <div class="page-section-demo">
+                        <ol class="list list-striped">
+                            <li>item</li>
+                            <li>item</li>
+                            <li>item</li>
+                            <li>item</li>
+                        </ol>
+                    </div>
+                    <div class="page-section-code">
+
+                    </div>
+                </section>
+                <section class="page-section">
+                    <h2 id="brand">Unordred Lists</h2>
+                    <p class="page-section-description">
+                        Unordred list can be used to list up different elements from the same group: 
+                    </p>
+                    <div class="page-section-demo">
+                        <ul class="list list-striped">
+                            <li>item</li>
+                            <li>item</li>
+                            <li>item</li>
+                            <li>item</li>
+                        </ul>
+                    </div>
+                    <div class="page-section-code">
+
+                    </div>
+                </section>
+                <section class="page-section">
+                    <h2 id="brand">Links</h2>
+                    <p class="page-section-description">
+                        A common link provids to switch to another domain which is attached on a key word:
+                    </p>
+                    <div class="page-section-demo">
+                        <a class="link" 
+                        href="https://wiki.mediacube.at/wiki/index.php/Frontend_Development_1_-_WS_2016" > Link </a>
+                    </div>
+                    <div class="page-section-code">
+
+                    </div>
+                    <p class="page-section-description">
+                        Clicking an action link means that something happens if it is clicked, like an "apply here"-link:
+                    </p>
+                    <div class="page-section-demo">
+                        <a class="link link-action" 
+                        href="https://wiki.mediacube.at/wiki/index.php/Frontend_Development_1_-_WS_2016" > Link </a>
+                    </div>
+                    <div class="page-section-code">
+
+                    </div>
+                </section>
+                <section class="page-section">
+                    <h2 id="brand">Buttons</h2>
+                    <p class="page-section-description">
+                        Best Buttons to choose.
+                    </p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="page-section-demo">
+                                <button class="btn btn-big btn-color-blue"> Big Button </button>
+                                <button class="btn btn-middle btn-color-blue">Middle Button</button>
+                                <button class="btn btn-small btn-color-blue">Small Button</button>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="page-section-demo">
+                                <button class="btn btn-big btn-color-light"> Big Button </button>
+                                <button class="btn btn-middle btn-color-light">Middle Button</button>
+                                <button class="btn btn-small btn-color-light">Small Button</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-section-code">
+
+                    </div>
+                </section>
+                <section class="page-section">
+                    <h2 id="brand">Forms</h2>
+                    <p class="page-section-description">
+                        Good structured Formulars are very important, see below how it can be created:
+                    </p>
+                    <div class="page-section-demo">
+                        <form class="form">
+                            <fieldset>
+                                <legend class="form-legend">Formular</legend>
+                                Write a header
+                                <input type="text" name="text" class = "form-input-header" />
+                                Write some Text
+                                <textarea rows="4" type="text" name="text" class = "form-input-textarea" /> </textarea>
+                                <label for="option" class="form-label">
+                                <input id="option" type="checkbox" name="field" value="option">
+                                Value</label>
+                                <input type="submit" name="confirm" value="OK" class="btn btn-small">
+                            </fieldset>
+                        </form>
+                    </div>
+                     <div class="page-section-code">
+                    
+                    </div>
+                </section>
+                <section class="page-section">
+                    <h2>Navigation</h2>
+                    <p class="page-section-description">
+                        This is the Navigation and can be used with this classes:
+                    </p>
+                    <div class="page-section-demo">
+                        
+                            <nav class="navigation" id="navigation">
+                                <ul class="list-inline navigation-list pull-right">
+                                    <li>
+                                        <a href="#brand">First Page</a>
+                                    </li>
+                                    <li>
+                                        <a href="#navigation">Second Page</a>
+                                    </li>
+                                    <li>
+                                        <a href="#components">Last Page</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        
+                    </div>
+                    <div class="page-section-code">
+
+                    </div>
+                    <p class="page-section-description">
+                        It can be styled however you like:
+                    </p>
+                    <div class="page-section-demo">
+                            <nav class="navigation" id="navigation">
+                                <ul class="list-inline navigation-list">
+                                    <li>
+                                        <a href="#brand">First Page</a>
+                                    </li>
+                                    <li>
+                                        <a href="#navigation">Second Page</a>
+                                    </li>
+                                    <li>
+                                        <a href="#components">Last Page</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                    </div>
+                    <div class="page-section-code">
+
+                    </div>
+                    <p class="page-section-description">
+                        Switching between several alignments is no problem anymore:
+                    </p>
+                    <div class="page-section-demo">
+                            <nav class="navigation" id="navigation">
+                                <ul class="list-inline navigation-list list-centered">
+                                    <li>
+                                        <a href="#brand">First Page</a>
+                                    </li>
+                                    <li>
+                                        <a href="#navigation">Second Page</a>
+                                    </li>
+                                    <li>
+                                        <a href="#components">Last Page</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                    </div>
+                    <div class="page-section-code">
+                            
+                    </div>
+                </section>
             </section>
         </div>
     </body>
