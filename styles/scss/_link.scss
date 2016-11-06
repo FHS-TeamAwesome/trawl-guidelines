@@ -1,10 +1,15 @@
 .link {
-    color: blue;
-    text-decoration: none;
+    color: $primaryColor;
 }
 
 .link-action {
     padding: 5px 40px 5px 40px;
     text-align: center;
     background-color: #e5e5e5;
+    text-decoration: none;
+
+    &:hover {
+        background-color: $highlightColor;
+        color: #fff;
+    }
 }
