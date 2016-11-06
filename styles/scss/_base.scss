@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    background-color: $lightColor;
+}
+
+pre {
+    margin-top: -15px;
+    margin-bottom: -50px;
+}
+
+a {
+    &:visited {
+        color: inherit;
+    }
+}

@@ -1,0 +1,32 @@
+.btn {
+    color: #EEEFF7;
+    border: none;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.btn:hover {
+    background-color: $highlightColor;
+}
+
+.btn-big {
+    padding: 10px 50px 10px 50px;
+}
+
+.btn-middle {
+    padding: 7px 30px 7px 30px;
+    font-size: 14px;
+}
+
+.btn-small {
+    padding: 4px 20px 4px 20px;
+    font-size: 12px;
+}
+
+.btn-color-blue {
+    background-color: $primaryColor;
+}
+
+.btn-color-light {
+    background-color: $accentColor;
+}

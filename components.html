@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Components | Trawl Styleguide</title>
+        <link href="./css/main.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/monokai-sublime.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navigation clearfix">
+            <div class="navigation-logo pull-left">
+                <img alt="logo" src="./images/logo_white.svg"/>
+                <div class="navigation-logo-subtext">
+                    Styleguide
+                </div>
+            </div>
+            <ul class="list-inline navigation-list pull-right">
+                <li>
+                    <a href="/brand">Brand Guide</a>
+                </li>
+                <li>
+                    <a href="/css-methodology">CSS Methodology</a>
+                </li>
+                <li class="is-active">
+                    <a href="/components">Components</a>
+                </li>
+            </ul>
+        </nav>
+        <header class="header">
+            <p class="header-description">
+                Modern, easy to use styleguide definition.
+            </p>
+        </header>
+        <div class="container">
+            <section class="page-section">
+                <h2 id="components">Components</h2>
+                <p class="page-section-description">
+                    Here are all components listed. 
+                    Beneath the single compnonets are a "HTML"- and a "CSS"-Block, where the used Html-tags and defined classes can be found.
+                </p>
+                <section class="page-section">
+                    <h2 id="brand">Ordred Lists</h2>
+                    <p class="page-section-description">
+                        Ordred lists can be used to structure several elements from the same group hirachically:
+                    </p>
+                    <div class="page-section-demo">
+                        <ol class="list list-striped">
+                            <li>item</li>
+                            <li>item</li>
+                            <li>item</li>
+                            <li>item</li>
+                        </ol>
+                    </div>
+                    <div class="page-section-code">
+                        <pre>
+                        <div>HTML:</div>
+<!-- ============== Code block ============== -->                   
+<code class="html">&lt;ol class="list list-striped"&gt;
+    &lt;li&gt;item&lt;/li&gt;
+    &lt;li&gt;item&lt;/li&gt;
+    &lt;li&gt;item&lt;/li&gt;
+    &lt;li&gt;item&lt;/li&gt;
+&lt;/ol&gt;
+</code>
+<!-- ============== /Code block ============== -->
+                    <div>CSS:</div>
+<!-- ============== Code block ============== -->                   
+<code class="css">.list {
+    & > li {
+        padding: 10px;
+    }
+}
+
+.list-striped {
+    & > li:nth-child(odd) {
+        background-color: #e5e5e5;
+    }
+}
+</code>
+<!-- ============== /Code block ============== -->
+                        </pre>
+                    </div>
+                </section>
+                <section class="page-section">
+                    <h2 id="brand">Unordred Lists</h2>
+                    <p class="page-section-description">
+                        Unordred list can be used to list up different elements from the same group: 
+                    </p>
+                    <div class="page-section-demo">
+                        <ul class="list list-striped">
+                            <li>item</li>
+                            <li>item</li>
+                            <li>item</li>
+                            <li>item</li>
+                        </ul>
+                    </div>
+                    <div class="page-section-code">
+ <pre>
+                        <div>HTML:</div>
+<!-- ============== Code block ============== -->                   
+<code class="html">&lt;ul class="list list-striped"&gt;
+    &lt;li&gt;item&lt;/li&gt;
+    &lt;li&gt;item&lt;/li&gt;
+    &lt;li&gt;item&lt;/li&gt;
+    &lt;li&gt;item&lt;/li&gt;
+&lt;/ul&gt;
+</code>
+<!-- ============== /Code block ============== -->
+                    <div>CSS:</div>
+<!-- ============== Code block ============== -->                   
+<code class="css">.list {
+    & > li {
+        padding: 10px;
+    }
+}
+
+.list-striped {
+    & > li:nth-child(odd) {
+        background-color: #e5e5e5;
+    }
+}
+</code>
+<!-- ============== /Code block ============== -->
+                        </pre>
+                    </div>
+                </section>
+                <section class="page-section">
+                    <h2 id="brand">Links</h2>
+                    <p class="page-section-description">
+                        A common link provids to switch to another domain which is attached on a key word:
+                    </p>
+                    <div class="page-section-demo">
+                        <a class="link" 
+                        href="https://wiki.mediacube.at/wiki/index.php/Frontend_Development_1_-_WS_2016" > Link </a>
+                    </div>
+                    <div class="page-section-code">
+ <pre>
+                        <div>HTML:</div>
+<!-- ============== Code block ============== -->                   
+<code class="html">&lt;a class="link" href="https://..." &gt; Link &lt;/a&gt;
+</code>
+<!-- ============== /Code block ============== -->
+                    <div>CSS:</div>
+<!-- ============== Code block ============== -->                   
+<code class="css">.link {
+    color: blue;
+    text-decoration: none;
+}
+</code>
+<!-- ============== /Code block ============== -->
+                        </pre>
+                    </div>
+                    <p class="page-section-description">
+                        Clicking an action link means that something happens if it is clicked, like an "apply here"-link:
+                    </p>
+                    <div class="page-section-demo">
+                        <a class="link link-action" 
+                        href="https://wiki.mediacube.at/wiki/index.php/Frontend_Development_1_-_WS_2016" > Link </a>
+                    </div>
+                    <div class="page-section-code">
+<pre>
+                        <div>HTML:</div>
+<!-- ============== Code block ============== -->                   
+<code class="html">&lt;a class="link link-action" href="https://..." &gt; Link &lt;/a&gt;
+</code>
+<!-- ============== /Code block ============== -->
+                    <div>CSS:</div>
+<!-- ============== Code block ============== -->                   
+<code class="css">.link {
+    color: blue;
+    text-decoration: none;
+}
+
+.link-action {
+    padding: 5px 40px 5px 40px;
+    text-align: center;
+    background-color: #e5e5e5;
+}
+</code>
+<!-- ============== /Code block ============== -->
+                        </pre>
+                    </div>
+                </section>
+                <section class="page-section">
+                    <h2 id="brand">Buttons</h2>
+                    <p class="page-section-description">
+                        This Buttons can be rendered in different sizes and colors by using classes (see them in the css block below)
+                    </p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="page-section-demo">
+                                <button class="btn btn-big btn-color-blue"> Big Button </button>
+                                <button class="btn btn-middle btn-color-blue">Middle Button</button>
+                                <button class="btn btn-small btn-color-blue">Small Button</button>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="page-section-demo">
+                                <button class="btn btn-big btn-color-light"> Big Button </button>
+                                <button class="btn btn-middle btn-color-light">Middle Button</button>
+                                <button class="btn btn-small btn-color-light">Small Button</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-section-code">
+<pre>
+                        <div>HTML:</div>
+<!-- ============== Code block ============== -->                   
+<code class="html">&lt;button 
+class="btn btn-big btn-color-blue"&gt; Big Button &lt;/button&gt;
+
+&lt;button 
+class="btn btn-middle btn-color-blue">Middle Button&lt;/button&gt;
+
+&lt;button 
+class="btn btn-small btn-color-blue">Small Button&lt;/button&gt;
+</code>
+<!-- ============== /Code block ============== -->
+                    <div>CSS:</div>
+<!-- ============== Code block ============== -->                   
+<code class="css">.btn {
+    color: #EEEFF7;
+    border: none;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.btn:hover {
+    background-color: $highlightColor;
+}
+
+.btn-big {
+    padding: 10px 50px 10px 50px;
+}
+
+.btn-middle {
+    padding: 7px 30px 7px 30px;
+    font-size: 14px;
+}
+
+.btn-small {
+    padding: 4px 20px 4px 20px;
+    font-size: 12px;
+}
+
+.btn-color-blue {
+    background-color: $primaryColor;
+}
+
+.btn-color-light {
+    background-color: $accentColor;
+}
+</code>
+<!-- ============== /Code block ============== -->
+                        </pre>
+                    </div>
+                </section>
+                <section class="page-section">
+                    <h2 id="brand">Forms</h2>
+                    <p class="page-section-description">
+                        Good structured Formulars are very important, see below how it can be created:
+                    </p>
+                    <div class="page-section-demo">
+                        <form class="form">
+                            <fieldset>
+                                <legend class="form-legend">Formular</legend>
+                                Write a header
+                                <input type="text" name="text" class = "form-input-header" />
+                                Write some Text
+                                <textarea rows="4" type="text" name="text" class = "form-input-textarea" /> </textarea>
+                                <label for="option" class="form-label">
+                                <input id="option" type="checkbox" name="field" value="option">
+                                Value</label>
+                                <input type="submit" name="confirm" value="OK" class="btn btn-small">
+                            </fieldset>
+                        </form>
+                    </div>
+                     <div class="page-section-code">
+                    <pre>
+                        <div>HTML:</div>
+<!-- ============== Code block ============== -->                   
+<code class="html">&lt;form class="form"&gt;
+
+    &lt;fieldset&gt;
+
+        &lt;legend 
+            class="form-legend"&gt;
+                Formular
+        &lt;/legend&gt;
+
+
+        Write a header
+        &lt;input 
+            type="text" 
+            name="text" 
+            class = "form-input-header" /&gt;
+
+
+        Write some Text
+        &lt;textarea 
+            rows="4" t
+            ype="text" name="text" 
+            class = "form-input-textarea" /&gt; 
+        &lt;/textarea&gt;
+
+        &lt;label 
+            for="option" 
+            class="form-label"&gt;
+
+            &lt;input 
+                id="option" 
+                type="checkbox" 
+                name="field" 
+                value="option"&gt;
+                    Value
+
+        &lt;/label&gt;
+
+        &lt;input 
+            type="submit" 
+            name="confirm" 
+            value="OK" 
+            class="btn btn-small"&gt;
+
+    &lt;/fieldset&gt;
+
+&lt;/form&gt;
+
+</code>
+<!-- ============== /Code block ============== -->
+                    <div>CSS:</div>
+<!-- ============== Code block ============== -->                   
+<code class="css">.form {
+    padding: 15px;
+    border-radius: 5px; 
+    background-color: #e5e5e5;
+    border: 1px solid transparent;
+    box-shadow: 5px 5px 5px #888888;
+}
+
+.form-input-header {
+    width: 100%;
+    margin: 3px;
+}
+
+.form-input-textarea { 
+    width: 100%;
+}
+</code>
+<!-- ============== /Code block ============== -->
+                        </pre>
+                    </div>
+                </section>
+                <section class="page-section">
+                    <h2>Navigation</h2>
+                    <p class="page-section-description">
+                        This is the Navigation and can be used with this classes:
+                    </p>
+                    <div class="page-section-demo">
+                        
+                            <nav class="navigation" id="navigation">
+                                <ul class="list-inline navigation-list pull-right">
+                                    <li>
+                                        <a href="#brand">First Page</a>
+                                    </li>
+                                    <li>
+                                        <a href="#navigation">Second Page</a>
+                                    </li>
+                                    <li>
+                                        <a href="#components">Last Page</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        
+                    </div>
+                    <div class="page-section-code">
+
+                    </div>
+                    <p class="page-section-description">
+                        It can be styled however you like:
+                    </p>
+                    <div class="page-section-demo">
+                            <nav class="navigation" id="navigation">
+                                <ul class="list-inline navigation-list">
+                                    <li>
+                                        <a href="#brand">First Page</a>
+                                    </li>
+                                    <li>
+                                        <a href="#navigation">Second Page</a>
+                                    </li>
+                                    <li>
+                                        <a href="#components">Last Page</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                    </div>
+                    <div class="page-section-code">
+
+                    </div>
+                    <p class="page-section-description">
+                        Switching between several alignments is no problem anymore:
+                    </p>
+                    <div class="page-section-demo">
+                            <nav class="navigation" id="navigation">
+                                <ul class="list-inline navigation-list list-centered">
+                                    <li>
+                                        <a href="#brand">First Page</a>
+                                    </li>
+                                    <li>
+                                        <a href="#navigation">Second Page</a>
+                                    </li>
+                                    <li>
+                                        <a href="#components">Last Page</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                    </div>
+                    <div class="page-section-code">
+                          <pre>
+                        <div>HTML:</div>
+<!-- ============== Code block ============== -->                   
+<code class="html">&lt;nav class="navigation" id="navigation"&gt;
+    &lt;ul class="list-inline navigation-list list-centered"&gt;
+        &lt;li>
+            &lt;a href="#brand">First Page&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;a href="#navigation">Second Page&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;a href="#components">Last Page&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;
+
+</code>
+<!-- ============== /Code block ============== -->
+                    <div>CSS:</div>
+<!-- ============== Code block ============== -->                   
+<code class="css">.navigation {
+    width: 100%;
+    height: 60px;
+    background-color: $darkColor;
+    color: $lightColor;
+
+    &.is-fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+}
+
+.navigation-list {
+    & > li {
+        a {
+            display: inline-block;
+            padding: 20px 15px;
+            color: $lightColor;
+            text-decoration: none;
+        }
+
+        &:hover {
+            border-bottom: 2px solid $highlightColor;
+        }
+    }
+}
+
+.list-centered {
+    display: block;
+    text-align: center;
+}
+
+.list-inline {
+    @extend .list-unstyled;
+
+    & > li {
+        display: inline-block;
+        vertical-align: top;
+    }
+}
+</code>
+<!-- ============== /Code block ============== -->
+                        </pre>  
+                    </div>
+                </section>
+            </section>
+        </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+    </body>
+
+</html>
