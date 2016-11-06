@@ -15,13 +15,13 @@
             </div>
             <ul class="list-inline navigation-list pull-right">
                 <li>
-                    <a href="/brand">Brand Guide</a>
+                    <a href="./index">Brand Guide</a>
                 </li>
                 <li>
-                    <a href="/css-methodology">CSS Methodology</a>
+                    <a href="./css-methodology">CSS Methodology</a>
                 </li>
                 <li class="is-active">
-                    <a href="/components">Components</a>
+                    <a href="./components">Components</a>
                 </li>
             </ul>
         </nav>
@@ -34,13 +34,16 @@
             <section class="page-section">
                 <h2 id="components">Components</h2>
                 <p class="page-section-description">
-                    Here are all components listed. 
-                    Beneath the single compnonets are a "HTML"- and a "CSS"-Block, where the used Html-tags and defined classes can be found.
+                    In this section there are a set of components built according to 
+                    the mentioned rules and guidelines.<br/>Each section consists of a 
+                    code block and an example of the component.
                 </p>
                 <section class="page-section">
-                    <h2 id="brand">Ordred Lists</h2>
+                    <h3>Ordred Lists</h3>
                     <p class="page-section-description">
-                        Ordred lists can be used to structure several elements from the same group hirachically:
+                        Applying the 'list' class to a list element will change it's default
+                        styling. Using the 'list-striped' sub-class you can add a striped effect to
+                        your list.
                     </p>
                     <div class="page-section-demo">
                         <ol class="list list-striped">
@@ -51,8 +54,8 @@
                         </ol>
                     </div>
                     <div class="page-section-code">
-                        <pre>
                         <div>HTML:</div>
+                        <pre>
 <!-- ============== Code block ============== -->                   
 <code class="html">&lt;ol class="list list-striped"&gt;
     &lt;li&gt;item&lt;/li&gt;
@@ -62,28 +65,13 @@
 &lt;/ol&gt;
 </code>
 <!-- ============== /Code block ============== -->
-                    <div>CSS:</div>
-<!-- ============== Code block ============== -->                   
-<code class="css">.list {
-    & > li {
-        padding: 10px;
-    }
-}
-
-.list-striped {
-    & > li:nth-child(odd) {
-        background-color: #e5e5e5;
-    }
-}
-</code>
-<!-- ============== /Code block ============== -->
                         </pre>
                     </div>
                 </section>
                 <section class="page-section">
-                    <h2 id="brand">Unordred Lists</h2>
+                    <h3>Unordred Lists</h3>
                     <p class="page-section-description">
-                        Unordred list can be used to list up different elements from the same group: 
+                        The same goes for unordered lists: 
                     </p>
                     <div class="page-section-demo">
                         <ul class="list list-striped">
@@ -94,8 +82,8 @@
                         </ul>
                     </div>
                     <div class="page-section-code">
- <pre>
                         <div>HTML:</div>
+                        <pre>
 <!-- ============== Code block ============== -->                   
 <code class="html">&lt;ul class="list list-striped"&gt;
     &lt;li&gt;item&lt;/li&gt;
@@ -105,46 +93,23 @@
 &lt;/ul&gt;
 </code>
 <!-- ============== /Code block ============== -->
-                    <div>CSS:</div>
-<!-- ============== Code block ============== -->                   
-<code class="css">.list {
-    & > li {
-        padding: 10px;
-    }
-}
-
-.list-striped {
-    & > li:nth-child(odd) {
-        background-color: #e5e5e5;
-    }
-}
-</code>
-<!-- ============== /Code block ============== -->
                         </pre>
                     </div>
                 </section>
                 <section class="page-section">
-                    <h2 id="brand">Links</h2>
+                    <h3>Links</h3>
                     <p class="page-section-description">
-                        A common link provids to switch to another domain which is attached on a key word:
+                        A common link can also be enhanced using the 'link' class:
                     </p>
                     <div class="page-section-demo">
                         <a class="link" 
-                        href="https://wiki.mediacube.at/wiki/index.php/Frontend_Development_1_-_WS_2016" > Link </a>
+                        href="https://wiki.mediacube.at/wiki/index.php/Frontend_Development_1_-_WS_2016">Link</a>
                     </div>
                     <div class="page-section-code">
- <pre>
                         <div>HTML:</div>
+                        <pre>
 <!-- ============== Code block ============== -->                   
-<code class="html">&lt;a class="link" href="https://..." &gt; Link &lt;/a&gt;
-</code>
-<!-- ============== /Code block ============== -->
-                    <div>CSS:</div>
-<!-- ============== Code block ============== -->                   
-<code class="css">.link {
-    color: blue;
-    text-decoration: none;
-}
+<code class="html">&lt;a class="link" href="https://..."&gt;Link&lt;/a&gt;
 </code>
 <!-- ============== /Code block ============== -->
                         </pre>
@@ -154,338 +119,277 @@
                     </p>
                     <div class="page-section-demo">
                         <a class="link link-action" 
-                        href="https://wiki.mediacube.at/wiki/index.php/Frontend_Development_1_-_WS_2016" > Link </a>
+                        href="https://wiki.mediacube.at/wiki/index.php/Frontend_Development_1_-_WS_2016">Link</a>
                     </div>
                     <div class="page-section-code">
-<pre>
                         <div>HTML:</div>
+                        <pre>
 <!-- ============== Code block ============== -->                   
-<code class="html">&lt;a class="link link-action" href="https://..." &gt; Link &lt;/a&gt;
-</code>
-<!-- ============== /Code block ============== -->
-                    <div>CSS:</div>
-<!-- ============== Code block ============== -->                   
-<code class="css">.link {
-    color: blue;
-    text-decoration: none;
-}
-
-.link-action {
-    padding: 5px 40px 5px 40px;
-    text-align: center;
-    background-color: #e5e5e5;
-}
+<code class="html">&lt;a class="link-action" href="https://..." &gt;Link&lt;/a&gt;
 </code>
 <!-- ============== /Code block ============== -->
                         </pre>
                     </div>
                 </section>
                 <section class="page-section">
-                    <h2 id="brand">Buttons</h2>
+                    <h3>Buttons</h3>
                     <p class="page-section-description">
-                        This Buttons can be rendered in different sizes and colors by using classes (see them in the css block below)
+                        This Buttons can be rendered in different sizes and colors by using different classes.
                     </p>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="page-section-demo">
-                                <button class="btn btn-big btn-color-blue"> Big Button </button>
+                                <button class="btn btn-big btn-color-blue">Big Button</button>
                                 <button class="btn btn-middle btn-color-blue">Middle Button</button>
                                 <button class="btn btn-small btn-color-blue">Small Button</button>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="page-section-demo">
-                                <button class="btn btn-big btn-color-light"> Big Button </button>
+                                <button class="btn btn-big btn-color-light">Big Button</button>
                                 <button class="btn btn-middle btn-color-light">Middle Button</button>
                                 <button class="btn btn-small btn-color-light">Small Button</button>
                             </div>
                         </div>
                     </div>
                     <div class="page-section-code">
-<pre>
                         <div>HTML:</div>
+                        <pre>
 <!-- ============== Code block ============== -->                   
-<code class="html">&lt;button 
-class="btn btn-big btn-color-blue"&gt; Big Button &lt;/button&gt;
+<code class="html">&lt;button class="btn btn-big btn-color-blue"&gt;Big Button&lt;/button&gt;
 
-&lt;button 
-class="btn btn-middle btn-color-blue">Middle Button&lt;/button&gt;
+&lt;button class="btn btn-middle btn-color-blue">Middle Button&lt;/button&gt;
 
-&lt;button 
-class="btn btn-small btn-color-blue">Small Button&lt;/button&gt;
-</code>
-<!-- ============== /Code block ============== -->
-                    <div>CSS:</div>
-<!-- ============== Code block ============== -->                   
-<code class="css">.btn {
-    color: #EEEFF7;
-    border: none;
-    margin-bottom: 20px;
-    display: flex;
-}
-
-.btn:hover {
-    background-color: $highlightColor;
-}
-
-.btn-big {
-    padding: 10px 50px 10px 50px;
-}
-
-.btn-middle {
-    padding: 7px 30px 7px 30px;
-    font-size: 14px;
-}
-
-.btn-small {
-    padding: 4px 20px 4px 20px;
-    font-size: 12px;
-}
-
-.btn-color-blue {
-    background-color: $primaryColor;
-}
-
-.btn-color-light {
-    background-color: $accentColor;
-}
+&lt;button class="btn btn-small btn-color-blue">Small Button&lt;/button&gt;
 </code>
 <!-- ============== /Code block ============== -->
                         </pre>
                     </div>
                 </section>
                 <section class="page-section">
-                    <h2 id="brand">Forms</h2>
+                    <h3>Form elements</h3>
                     <p class="page-section-description">
-                        Good structured Formulars are very important, see below how it can be created:
+                        A set of standard form components:
                     </p>
                     <div class="page-section-demo">
-                        <form class="form">
+                        <form class="form" onsubmit="return false;">
                             <fieldset>
-                                <legend class="form-legend">Formular</legend>
-                                Write a header
-                                <input type="text" name="text" class = "form-input-header" />
-                                Write some Text
-                                <textarea rows="4" type="text" name="text" class = "form-input-textarea" /> </textarea>
-                                <label for="option" class="form-label">
-                                <input id="option" type="checkbox" name="field" value="option">
-                                Value</label>
-                                <input type="submit" name="confirm" value="OK" class="btn btn-small">
+                                <legend class="form-legend">Form</legend>
+                                <div class="form-element">
+                                    <label for="input-1" class="form-label">Input</label>
+                                    <input type="text" id="input-1" name="text" class="form-input"/>
+                                </div>
+                                <div class="form-element">
+                                    <label class="form-label">Select</label>
+                                    <select class="form-select">
+                                        <option>Foo</option>
+                                        <option>Bar</option>
+                                        <option>Baz</option>
+                                    </select>
+                                </div>
+                                <div for="textarea-1" class="form-element">
+                                    <label class="form-label">Textarea</label>
+                                    <textarea type="text" id="textarea-1" name="text" class="form-textarea"/></textarea>
+                                </div>
+                                <div class="form-element">
+                                    <label for="field_1" class="form-label">
+                                        <input type="checkbox" id="field_1" name="field_1" value="field_1">
+                                        Checkbox
+                                    </label>
+                                    <label for="field_2" class="form-label">
+                                        <input type="checkbox" id="field_2" name="field_2" value="field_2">
+                                        Checkbox
+                                    </label>
+                                    <label for="field_3" class="form-label">
+                                        <input type="checkbox" id="field_3" name="field_3" value="field_3">
+                                        Checkbox
+                                    </label>
+                                </div>
+                                <div class="form-element">
+                                    <label for="radio_1" class="form-label">
+                                        <input type="radio" id="radio_1" name="radio" value="radio_1">
+                                        Radio 1
+                                    </label>
+                                    <label for="radio_2" class="form-label">
+                                        <input type="radio" id="radio_2" name="radio" value="radio_2">
+                                        Radio 2
+                                    </label>
+                                    <label for="radio_3" class="form-label">
+                                        <input type="radio" id="radio_3" name="radio" value="radio_3">
+                                        Radio 2
+                                    </label>
+                                </div>
+                                <div class="form-element">
+                                    <input type="submit" name="confirm" value="OK" class="btn btn-big btn-color-blue">
+                                </div>
                             </fieldset>
                         </form>
                     </div>
                      <div class="page-section-code">
-                    <pre>
                         <div>HTML:</div>
+                        <pre>
 <!-- ============== Code block ============== -->                   
 <code class="html">&lt;form class="form"&gt;
-
     &lt;fieldset&gt;
-
-        &lt;legend 
-            class="form-legend"&gt;
-                Formular
-        &lt;/legend&gt;
-
-
-        Write a header
-        &lt;input 
-            type="text" 
-            name="text" 
-            class = "form-input-header" /&gt;
-
-
-        Write some Text
-        &lt;textarea 
-            rows="4" t
-            ype="text" name="text" 
-            class = "form-input-textarea" /&gt; 
-        &lt;/textarea&gt;
-
-        &lt;label 
-            for="option" 
-            class="form-label"&gt;
-
-            &lt;input 
-                id="option" 
-                type="checkbox" 
-                name="field" 
-                value="option"&gt;
-                    Value
-
-        &lt;/label&gt;
-
-        &lt;input 
-            type="submit" 
-            name="confirm" 
-            value="OK" 
-            class="btn btn-small"&gt;
-
+        &lt;legend class="form-legend"&gt;Form&lt;/legend&gt;
+        &lt;div class="form-element"&gt;
+            &lt;label for="input-1" class="form-label"&gt;Input&lt;/label&gt;
+            &lt;input type="text" id="input-1" name="text" class="form-input"/&gt;
+        &lt;/div&gt;
+        &lt;div class="form-element"&gt;
+            &lt;label class="form-label"&gt;Select&lt;/label&gt;
+            &lt;select class="form-select"&gt;
+                &lt;option&gt;Foo&lt;/option&gt;
+                &lt;option&gt;Bar&lt;/option&gt;
+                &lt;option&gt;Baz&lt;/option&gt;
+            &lt;/select&gt;
+        &lt;/div&gt;
+        &lt;div for="textarea-1" class="form-element"&gt;
+            &lt;label class="form-label"&gt;Textarea&lt;/label&gt;
+            &lt;textarea type="text" id="textarea-1" name="text" class="form-textarea"/&gt;&lt;/textarea&gt;
+        &lt;/div&gt;
+        &lt;div class="form-element"&gt;
+            &lt;label for="field_1" class="form-label"&gt;
+                &lt;input type="checkbox" id="field_1" name="field_1" value="field_1"&gt;
+                Checkbox
+            &lt;/label&gt;
+            &lt;label for="field_2" class="form-label"&gt;
+                &lt;input type="checkbox" id="field_2" name="field_2" value="field_2"&gt;
+                Checkbox
+            &lt;/label&gt;
+            &lt;label for="field_3" class="form-label"&gt;
+                &lt;input type="checkbox" id="field_3" name="field_3" value="field_3"&gt;
+                Checkbox
+            &lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class="form-element"&gt;
+            &lt;label for="radio_1" class="form-label"&gt;
+                &lt;input type="radio" id="radio_1" name="radio" value="radio_1"&gt;
+                Radio 1
+            &lt;/label&gt;
+            &lt;label for="radio_2" class="form-label"&gt;
+                &lt;input type="radio" id="radio_2" name="radio" value="radio_2"&gt;
+                Radio 2
+            &lt;/label&gt;
+            &lt;label for="radio_3" class="form-label"&gt;
+                &lt;input type="radio" id="radio_3" name="radio" value="radio_3"&gt;
+                Radio 2
+            &lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class="form-element"&gt;
+            &lt;input type="submit" name="confirm" value="OK" class="btn btn-big btn-color-blue"&gt;
+        &lt;/div&gt;
     &lt;/fieldset&gt;
-
 &lt;/form&gt;
-
-</code>
-<!-- ============== /Code block ============== -->
-                    <div>CSS:</div>
-<!-- ============== Code block ============== -->                   
-<code class="css">.form {
-    padding: 15px;
-    border-radius: 5px; 
-    background-color: #e5e5e5;
-    border: 1px solid transparent;
-    box-shadow: 5px 5px 5px #888888;
-}
-
-.form-input-header {
-    width: 100%;
-    margin: 3px;
-}
-
-.form-input-textarea { 
-    width: 100%;
-}
 </code>
 <!-- ============== /Code block ============== -->
                         </pre>
                     </div>
                 </section>
                 <section class="page-section">
-                    <h2>Navigation</h2>
+                    <h3>Navigation</h3>
                     <p class="page-section-description">
-                        This is the Navigation and can be used with this classes:
+                        The Navigation component can be used like in the following examples.
+                        You can align the navigation items by using the 'pull-left' or 'pull-right' helper class.
                     </p>
                     <div class="page-section-demo">
-                        
-                            <nav class="navigation" id="navigation">
-                                <ul class="list-inline navigation-list pull-right">
-                                    <li>
-                                        <a href="#brand">First Page</a>
-                                    </li>
-                                    <li>
-                                        <a href="#navigation">Second Page</a>
-                                    </li>
-                                    <li>
-                                        <a href="#components">Last Page</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        
+                        <nav class="navigation" id="navigation">
+                            <ul class="list-inline navigation-list pull-right">
+                                <li class="is-active">
+                                    <a href="#">First Page</a>
+                                </li>
+                                <li>
+                                    <a href="#">Second Page</a>
+                                </li>
+                                <li>
+                                    <a href="#">Last Page</a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                     <div class="page-section-code">
-
-                    </div>
-                    <p class="page-section-description">
-                        It can be styled however you like:
-                    </p>
-                    <div class="page-section-demo">
-                            <nav class="navigation" id="navigation">
-                                <ul class="list-inline navigation-list">
-                                    <li>
-                                        <a href="#brand">First Page</a>
-                                    </li>
-                                    <li>
-                                        <a href="#navigation">Second Page</a>
-                                    </li>
-                                    <li>
-                                        <a href="#components">Last Page</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                    </div>
-                    <div class="page-section-code">
-
-                    </div>
-                    <p class="page-section-description">
-                        Switching between several alignments is no problem anymore:
-                    </p>
-                    <div class="page-section-demo">
-                            <nav class="navigation" id="navigation">
-                                <ul class="list-inline navigation-list list-centered">
-                                    <li>
-                                        <a href="#brand">First Page</a>
-                                    </li>
-                                    <li>
-                                        <a href="#navigation">Second Page</a>
-                                    </li>
-                                    <li>
-                                        <a href="#components">Last Page</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                    </div>
-                    <div class="page-section-code">
-                          <pre>
                         <div>HTML:</div>
+                              <pre>
 <!-- ============== Code block ============== -->                   
 <code class="html">&lt;nav class="navigation" id="navigation"&gt;
-    &lt;ul class="list-inline navigation-list list-centered"&gt;
-        &lt;li>
-            &lt;a href="#brand">First Page&lt;/a&gt;
+    &lt;ul class="list-inline navigation-list pull-right"&gt;
+        &lt;li class="is-active"&gt;
+            &lt;a href="#"&gt;First Page&lt;/a&gt;
         &lt;/li&gt;
         &lt;li&gt;
-            &lt;a href="#navigation">Second Page&lt;/a&gt;
+            &lt;a href="#"&gt;Second Page&lt;/a&gt;
         &lt;/li&gt;
         &lt;li&gt;
-            &lt;a href="#components">Last Page&lt;/a&gt;
+            &lt;a href="#"&gt;Last Page&lt;/a&gt;
         &lt;/li&gt;
     &lt;/ul&gt;
 &lt;/nav&gt;
-
 </code>
 <!-- ============== /Code block ============== -->
-                    <div>CSS:</div>
-<!-- ============== Code block ============== -->                   
-<code class="css">.navigation {
-    width: 100%;
-    height: 60px;
-    background-color: $darkColor;
-    color: $lightColor;
-
-    &.is-fixed {
-        position: fixed;
-        top: 0;
-        left: 0;
-    }
-}
-
-.navigation-list {
-    & > li {
-        a {
-            display: inline-block;
-            padding: 20px 15px;
-            color: $lightColor;
-            text-decoration: none;
-        }
-
-        &:hover {
-            border-bottom: 2px solid $highlightColor;
-        }
-    }
-}
-
-.list-centered {
-    display: block;
-    text-align: center;
-}
-
-.list-inline {
-    @extend .list-unstyled;
-
-    & > li {
-        display: inline-block;
-        vertical-align: top;
-    }
-}
-</code>
-<!-- ============== /Code block ============== -->
-                        </pre>  
+                        </pre> 
+                    </div> 
+                    <p class="page-section-description">
+                        Navigation with items aligned to the left side using 'pull-left':
+                    </p>
+                    <div class="page-section-demo">
+                        <nav class="navigation" id="navigation">
+                            <ul class="list-inline navigation-list pull-left">
+                                <li>
+                                    <a href="#">First Page</a>
+                                </li>
+                                <li>
+                                    <a href="#">Second Page</a>
+                                </li>
+                                <li>
+                                    <a href="#">Last Page</a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
+                </section>
+                <section class="page-section">
+                    <h3>Media object</h3>
+                    <p class="page-section-description">
+                        Use the media object as an abstract element to create flexible and more complex components
+                        like comments or blog posts.<br/>
+                        You can set the 'media-left' or 'media-right' class to align the media element (e.g. image) inside the container.
+                    </p>
+
+                    <div class="page-section-demo">
+                        <div class="media">
+                            <a class="media-left" href="#">
+                                <img class="media-object" src="http://lorempixel.com/62/64" alt="Generic placeholder image">
+                            </a>
+                            <div class="media-body">
+                                <h5 class="media-title">Media title</h5>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="page-section-code">
+                        <div>HTML:</div>
+                              <pre>
+<!-- ============== Code block ============== -->                   
+<code class="html">&lt;div class="media"&gt;
+    &lt;a class="media-left" href="#"&gt;
+        &lt;img class="media-object" src="http://lorempixel.com/62/64" alt="Placeholder image"&gt;
+    &lt;/a&gt;
+    &lt;div class="media-body"&gt;
+        &lt;h5 class="media-title"&gt;Media title&lt;/h5&gt;
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+    &lt;/div&gt;
+&lt;/div&gt;
+</code>
+<!-- ============== /Code block ============== -->
+                        </pre> 
+                    </div> 
                 </section>
             </section>
         </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script>
     </body>
-
 </html>
